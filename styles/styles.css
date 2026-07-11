@@ -192,6 +192,12 @@ body {
 .featured .outline-btn {
   color: #f9f7f7;
   background: #2563eb;
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
 }
 /* Contact Button Style */
 .contact {
@@ -246,7 +252,11 @@ hr {
 }
 
 /* Button Style */
-button {
+
+.standard-btn {
+  border: 1px solid #2563eb;
+  background: #f8f9fb;
+  color: #2563eb;
   width: 100%;
   padding: 14px;
   border-radius: 5px;
@@ -255,14 +265,26 @@ button {
   cursor: pointer;
 }
 
-.standard-btn {
-  border: 1px solid #2563eb;
-  background: #f8f9fb;
-  color: #2563eb;
-}
-
 .primary-btn {
   background: #2563eb;
   color: white;
   border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.conact-btn {
+  background: #e7e9ee;
+  color: black;
+  border: 1px solid black;
+
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
 }
