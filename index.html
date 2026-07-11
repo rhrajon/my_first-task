@@ -1,168 +1,331 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Assinment</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!---Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navabr">
-      <!-- logo -->
 
-      <div class="logo">
-        <div class="logo-icon">
-          <img src="./images/logo.png" alt="logo img" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Assinment</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!---Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet" />
+  <!-- font Awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navabr">
+    <!-- logo -->
+
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="./images/logo.png" alt="logo img" />
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+
+    <ul class="menu">
+      <li><a href="#">Speakers</a></li>
+      <li><a href="#">Schdule</a></li>
+      <li><a href="#">Tracks</a></li>
+      <li><a href="#">Venu</a></li>
+    </ul>
+
+    <!-- Button -->
+    <button class="btn"><a href="#">Register Now</a></button>
+  </nav>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="overly"></div>
+      <div class="hero-content">
+        <h1>Code.<em>Connet.</em> Create</h1>
+        <p>
+          Join 4,000+ engineers, founders, and builders at the premier
+          developer<br />
+          conference of 2026. Three days of cutting-edge talks, hands-on
+          workshops,<br />
+          and meaningful connections.
+        </p>
+        <button class="btn hero-btn"><a href="#">Register Now</a></button>
+      </div>
+    </section>
+
+    <!-- Speaker Section -->
+    <section class="speaker">
+      <h2>Meet the Speakers</h2>
+      <div class="speaker-grid">
+        <div class="speaker-card">
+          <img src="./images/andrej.png" alt="" />
+          <div class="speaker-card-content">
+            <span class="designation">AI/ML</span>
+            <h3>Andrej Karpathy</h3>
+            <p>Pretraining team, Anthropic</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <img src="./images/demis.png" alt="" />
+          <div class="speaker-card-content">
+            <span class="designation">Cloud & DevOps</span>
+            <h3>Demis Hassabis</h3>
+            <p>Co-Founder and CEO, Google DeepMind</p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img src="./images/gary.png" alt="" />
+          <div class="speaker-card-content">
+            <span class="designation">Frontend</span>
+            <h3>Gary Marcus</h3>
+            <p>Staff Engineer, Vercel</p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img src="./images/mustafa.png" alt="" />
+          <div class="speaker-card-content">
+            <span class="designation">Security</span>
+            <h3>Mustafa Suleyman</h3>
+            <p>CEO of Microsoft AI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+
+
+    <section class="pricing">
+      <h2>Secure Your Spot</h2>
+      <p class="subtitle">Early-bird pricing ends August 15, 2026.</p>
+      <div class="pricing-container">
+
+        <!-- first Card -->
+        <div class="card ">
+          <span class="plan">STANDARD</span>
+          <h3>$399</h3>
+          <p class="price-text">Per Person</p>
+          <hr />
+          <ul>
+            <li>Access to all 3 conference days</li>
+            <li>48 curated technical talks</li>
+            <li>2 workshop sessions</li>
+            <li>Networking lunch & coffee breaks</li>
+            <li>Conference swag bag</li>
+            <li>Digital recordings (30 days)</li>
+          </ul>
+          <button class="standard-btn">Get Standard</button>
+        </div>
+
+
+
+        <!-- Second Card -->
+        <div class="card featured">
+          <span class="plan">Pro</span>
+          <h3>$749</h3>
+          <p class="price-text">Per Person</p>
+          <hr />
+          <ul>
+            <li>Everything in Standard</li>
+            <li>Unlimited workshop access</li>
+            <li>Speaker meet & greet</li>
+            <li>VIP networking dinner</li>
+            <li>Lifetime recording access</li>
+            <li>1-on-1 mentorship (30 min)</li>
+          </ul>
+          <button class="outline-btn">Get Pro</button>
+        </div>
+
+
+
+        <!-- Third Card  -->
+        <div class="card contact">
+          <span class="plan">Team</span>
+          <h3>$5,999</h3>
+          <p class="price-text">up to 10 people</p>
+          <hr />
+          <ul>
+            <li>Everything in Pro (10 seats)</li>
+            <li>Dedicated team lounge access</li>
+            <li>Private workshop booking</li>
+            <li>Company logo on event page</li>
+            <li>Recruitment booth (1 day)</li>
+            <li>Priority customer support</li>
+          </ul>
+
+          <button class="conact-btn">Contact Us</button>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <!-- PLACEHOLDER SECTION -->
+
+    <section class="schedule">
+
+      <div class="container">
+
+        <h2>Conference Schedule</h2>
+
+        <p class="subtitle">
+          Three days packed with inspiring talks, workshops,
+          and networking opportunities.
+        </p>
+
+        <div class="schedule-grid">
+
+          <!-- Card 1 -->
+          <article class="schedule-card">
+
+            <span class="time">09:00 AM</span>
+
+            <h3>Opening Keynote</h3>
+
+            <p class="speaker">Andrej Karpathy</p>
+
+            <span class="track">AI / ML</span>
+
+            <p class="description">
+              Discover the future of Artificial Intelligence and software engineering.
+            </p>
+
+          </article>
+
+          <!-- Card 2 -->
+          <article class="schedule-card">
+
+            <span class="time">11:00 AM</span>
+
+            <h3>Modern Frontend Development</h3>
+
+            <p class="speaker">Gary Marcus</p>
+
+            <span class="track">Frontend</span>
+
+            <p class="description">
+              Learn modern HTML, CSS, Flexbox, Grid and responsive layouts.
+            </p>
+
+          </article>
+
+          <!-- Card 3 -->
+          <article class="schedule-card">
+
+            <span class="time">01:30 PM</span>
+
+            <h3>Cloud & DevOps</h3>
+
+            <p class="speaker">Demis Hassabis</p>
+
+            <span class="track">Cloud</span>
+
+            <p class="description">
+              Explore cloud computing, Docker and deployment workflows.
+            </p>
+
+          </article>
+
+          <!-- Card 4 -->
+          <article class="schedule-card">
+
+            <span class="time">03:00 PM</span>
+
+            <h3>Cyber Security</h3>
+
+            <p class="speaker">Mustafa Suleyman</p>
+
+            <span class="track">Security</span>
+
+            <p class="description">
+              Learn secure coding practices and modern cybersecurity trends.
+            </p>
+
+          </article>
+
+          <!-- Card 5 -->
+          <article class="schedule-card">
+
+            <span class="time">04:30 PM</span>
+
+            <h3>Hands-on Workshop</h3>
+
+            <p class="speaker">Conference Team</p>
+
+            <span class="track">Workshop</span>
+
+            <p class="description">
+              Build a complete frontend project using HTML and CSS.
+            </p>
+
+          </article>
+
+          <!-- Card 6 -->
+          <article class="schedule-card">
+
+            <span class="time">06:00 PM</span>
+
+            <h3>Closing Ceremony</h3>
+
+            <p class="speaker">All Speakers</p>
+
+            <span class="track">Event</span>
+
+            <p class="description">
+              Thank you session, networking and future announcements.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <Footer class="footer">
+    <div class="foot-container">
+      <div class="top-foot">
+        <div class="logo">
+<img src="./images/footer-logo.png" alt="">
+        </div>
+        <div class="social-links">
+<ul>
+  <li><i class="fa-brands fa-facebook"></i></li>
+  <li><i class="fa-brands fa-instagram"></i></li>
+  <li><i class="fa-brands fa-twitter"></i></li>
+  <li><i class="fa-brands fa-whatsapp"></i></li>
+</ul>
         </div>
       </div>
 
-      <!-- Navigation Menu -->
-
-      <ul class="menu">
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">Schdule</a></li>
-        <li><a href="#">Tracks</a></li>
-        <li><a href="#">Venu</a></li>
-      </ul>
-
-      <!-- Button -->
-      <button class="btn"><a href="#">Register Now</a></button>
-    </nav>
-
-    <main>
-      <!-- Hero Banner -->
-      <section class="hero">
-        <div class="overly"></div>
-        <div class="hero-content">
-          <h1>Code.<em>Connet.</em> Create</h1>
-          <p>
-            Join 4,000+ engineers, founders, and builders at the premier
-            developer<br />
-            conference of 2026. Three days of cutting-edge talks, hands-on
-            workshops,<br />
-            and meaningful connections.
-          </p>
-          <button class="btn hero-btn"><a href="#">Register Now</a></button>
-        </div>
-      </section>
-
-      <!-- Speaker Section -->
-      <section class="speaker">
-        <h2>Meet the Speakers</h2>
-        <div class="speaker-grid">
-          <div class="speaker-card">
-            <img src="./images/andrej.png" alt="" />
-            <div class="speaker-card-content">
-              <span class="designation">AI/ML</span>
-              <h3>Andrej Karpathy</h3>
-              <p>Pretraining team, Anthropic</p>
-            </div>
-          </div>
-
-          <div class="speaker-card">
-            <img src="./images/demis.png" alt="" />
-            <div class="speaker-card-content">
-              <span class="designation">Cloud & DevOps</span>
-              <h3>Demis Hassabis</h3>
-              <p>Co-Founder and CEO, Google DeepMind</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <img src="./images/gary.png" alt="" />
-            <div class="speaker-card-content">
-              <span class="designation">Frontend</span>
-              <h3>Gary Marcus</h3>
-              <p>Staff Engineer, Vercel</p>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <img src="./images/mustafa.png" alt="" />
-            <div class="speaker-card-content">
-              <span class="designation">Security</span>
-              <h3>Mustafa Suleyman</h3>
-              <p>CEO of Microsoft AI</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing Section -->
 
 
-      <section class="pricing">
-        <h2>Secure Your Spot</h2>
-        <p class="subtitle">Early-bird pricing ends August 15, 2026.</p>
-        <div class="pricing-container">
 
-          <!-- first Card -->
-          <div class="card ">
-            <span class="plan">STANDARD</span>
-            <h3>$399</h3>
-            <p class="price-text">Per Person</p>
-            <hr />
-            <ul>
-              <li>Access to all 3 conference days</li>
-              <li>48 curated technical talks</li>
-              <li>2 workshop sessions</li>
-              <li>Networking lunch & coffee breaks</li>
-              <li>Conference swag bag</li>
-              <li>Digital recordings (30 days)</li>
-            </ul>
-             <button class="standard-btn">Get Standard</button>
-          </div>
-         
-        
+      <div class="bottom-foot">
+<p>&copy; 2026 DevConf. All rights reserved.</p>
 
-        <!-- Second Card -->
-            <div class="card featured">
-            <span class="plan">Pro</span>
-            <h3>$749</h3>
-            <p class="price-text">Per Person</p>
-            <hr />
-             <ul>
-              <li>Everything in Standard</li>
-              <li>Unlimited workshop access</li>
-              <li>Speaker meet & greet</li>
-              <li>VIP networking dinner</li>
-              <li>Lifetime recording access</li>
-              <li>1-on-1 mentorship (30 min)</li>
-            </ul>
-           <button class="outline-btn">Get Pro</button>
-        </div> 
-          
-          
+<div class="footer-links">
+  <ul>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    
+  </ul>
+</div>
+      </div>
 
-        <!-- Third Card  -->
-          <div class="card contact">
-            <span class="plan">Team</span>
-            <h3>$5,999</h3>
-            <p class="price-text">up to 10 people</p>
-            <hr />
-             <ul>
-              <li>Everything in Pro (10 seats)</li>
-              <li>Dedicated team lounge access</li>
-              <li>Private workshop booking</li>
-              <li>Company logo on event page</li>
-              <li>Recruitment booth (1 day)</li>
-              <li>Priority customer support</li>
-            </ul>
-            
-            <button class="conact-btn">Contact Us</button>
-          </div>
-          
-        </div>
-        </div>
-      </section>
+    </div>
 
-      <!-- PLACEHOLDER SECTION -->
-       
-    </main>
-  </body>
+  </Footer>
+
+</body>
+
 </html>
